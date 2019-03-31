@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/recimg"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout
+    android:id="@+id/shedfetchact"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mailet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+        <AutoCompleteTextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="patient's email"
+            android:inputType="textEmailAddress"
+            android:textColor="#000"
+            android:textColorHint="#000"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            android:completionThreshold="1"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <TableLayout
+        android:id="@+id/datatb"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mailet">
+
+        <TableRow
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/datetv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#125788"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:text="Date and time : "
+                />
+
+            <TextView
+                android:id="@+id/dateresp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:textSize="16sp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+
+    <TextView
+        android:id="@+id/fastingtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#125788"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="fasting sugar check : "
+        />
+
+    <TextView
+        android:id="@+id/fastingresp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        />
+
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+
+    <TextView
+        android:id="@+id/recordtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#125788"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="record made : "
+        />
+
+    <TextView
+        android:id="@+id/recordresp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        />
+
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+    <TextView
+        android:id="@+id/morningexctv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#125788"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="morning exercise : "
+        />
+
+    <TextView
+        android:id="@+id/morningexcresp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        />
+
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+
+    <TextView
+        android:id="@+id/morninginstv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#125788"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="morning insulin : "
+        />
+
+    <TextView
+        android:id="@+id/morninginsresp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        />
+
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+
+    <TextView
+        android:id="@+id/afterinstv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#125788"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="afternoon insulin : "
+        />
+
+    <TextView
+        android:id="@+id/afterinsresp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        />
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+    <TextView
+        android:id="@+id/eveningexctv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#125788"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="evening exercise : "
+        />
+
+    <TextView
+        android:id="@+id/eveningexcresp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        />
+
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+
+    <TextView
+        android:id="@+id/nightinstv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#125788"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="night-time insulin : "
+
+        />
+
+    <TextView
+        android:id="@+id/nightinsresp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        />
+        </TableRow>
+
+        <TableRow
+            android:padding="8dp">
+
+    <TextView
+        android:id="@+id/bedchktv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#125788"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:text="bed-time sugar check : "
+        />
+
+    <TextView
+        android:id="@+id/bedchkresp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="#000"
+        />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="#125688"
+        android:layout_below="@+id/datatb"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/chkbt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:textAllCaps="false"
+        android:background="@null"
+        android:textColor="#125788"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/divider"
+        />
+
+</RelativeLayout>
+</ScrollView>

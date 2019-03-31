@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/recimg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/docrec"
+        android:id="@+id/splimg"
+        />
+
+    <TextView
+        android:id="@+id/spltxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splimg"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="10dp"
+        android:text="Health-X"
+        android:textAlignment="center"
+        android:textColor="#125688"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/spltxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spltxt"
+        android:layout_centerHorizontal="true"
+        android:text="Your Personal Assistant"
+        android:textAlignment="center"
+        android:textColor="#12568f" />
+</RelativeLayout>

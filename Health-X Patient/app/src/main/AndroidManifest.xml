@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="rkapoors.healthguide">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/splash"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemetoolbar">
+            <intent-filter>
+                <action android:name="rkapoors.healthguide.MainActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".splash"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".newrecord"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".checkrecord"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".signup"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".resetpassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".changepassword"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".settings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".contacts"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".doctor"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".aboutus"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".tutorial"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".hyperglycemia"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".hypoglycemia"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".fluctuation"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".diet"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".optimal"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".sites"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".storage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".doctorvisit"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".monitor"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".mealplan"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".notification"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".rewards"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".grview"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".schedact"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".recact"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

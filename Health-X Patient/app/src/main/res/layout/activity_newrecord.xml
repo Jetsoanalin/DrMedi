@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="rkapoors.healthguide.newrecord"
+    android:background="@drawable/recimg">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usermail"
+        android:textColor="#f00"
+        android:textStyle="italic"
+        android:text="Record Sharing is turned off"
+        android:textAllCaps="false"
+        android:layout_gravity="end"
+        android:textSize="15sp"
+        android:padding="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1. Comments"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="5dp"
+        android:id="@+id/cmtv"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/comspinner"
+        android:background="#ddd"
+        android:popupBackground="#efefef"
+        android:textAlignment="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+    <EditText
+        android:id="@+id/glucolevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="2. sugar level (mg/dL)"
+        android:focusableInTouchMode="true"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:textColor="#f00"
+        android:textStyle="bold"
+        />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp">
+        <EditText
+            android:id="@+id/others"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="3. insulin dosage (units)"
+            android:focusableInTouchMode="true"
+            android:inputType="numberDecimal"
+            android:textSize="20sp"
+            android:textColor="#f00"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <View
+        android:id="@+id/commview1"
+        android:layout_width="200dp"
+        android:layout_height="1dp"
+        android:background="#f00"
+        android:layout_marginTop="60dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <Button
+        android:id="@+id/rbt"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Record"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:background="@null"
+        android:textAllCaps="false"
+        android:textColor="#f00"/>
+</LinearLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>
